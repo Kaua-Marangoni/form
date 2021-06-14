@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title-register">Cadastro</h2>
+
+        <form action="" method="POST" enctype="multipart/form-data">
+
+            <label for="nome">Nome</label>
+            <input class="different-inputs" type="text" name="nome" required>
+
+            <label for="email">Email</label>
+            <input class="different-inputs" type="email" name="email" required>
+
+            <label for="idade">Idade</label>
+            <input class="different-inputs" type="number" name="idade" min="12" required>
+
+            <label for="data-nascimento">Data de Nascimento</label>
+            <input class="different-inputs" type="date" name="data-nascimento" required>
+
+            <label> Onde você possui conta:
+                <div>
+                    <input type="checkbox" name="instagram">
+                    <label class="checkbox-social" for="instagram">Instagram</label>
+
+                    <input type="checkbox" name="facebook">
+                    <label class="checkbox-social" for="facebook">Facebook</label>
+
+                    <input type="checkbox" name="youtube">
+                    <label class="checkbox-social" for="youtube">Youtube</label>
+                </div>
+            </label>
+
+            <label for="genero">Sexo</label>
+            <input type="radio" name="genero" value="masculino"> Masculino
+            <input type="radio" name="genero" value="feminino"> Feminino
+
+            <label for="cor-olhos">Cor dos Olhos</label>
+            <input type="color" name="cor-olhos">
+
+            <label for="biografia">Biografia</label>
+            <textarea name="biografia"></textarea>
+
+            <label for="foto">Foto do perfil</label>
+            <input type="file" name="foto" accept="image/*">
+
+            <label for="telefone">Telefone</label>
+            <input class="different-inputs" type="tel" inputmode="numeric" name="telefone" required>
+
+            <label for="link-perfil">Link do perfil do Facebook</label>
+            <input class="different-inputs" type="url" name="link-perfil">
+
+            <label for="senha">Senha <small>(Deve ter no mínimo 8 caracteres)</small></label>
+            <input class="different-inputs input-password" type="password" name="senha" min="8" required>
+
+            <button class="reset" type="reset" name="reset">Limpar</button>
+            <button class="submit" type="submit" name="enviar">Enviar dados</button>
+        </form>
+    </div>
+</body>
+
+</html>
